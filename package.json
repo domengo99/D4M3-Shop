@@ -11,4 +11,7 @@
     "discord.js": "^13.8.1"
   },
   "description": ""
+},
+"engines":{
+  "node":"16.10.x"
 }
