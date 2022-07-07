@@ -20,17 +20,6 @@ client.on("guildMemberRemove", (member) => {
 })
 
 
-//BENVENUTO
-client.on("guildMemberAdd", (member) => {
-    client.channels.cache.get("982622669415546920").send("Ciao " + member.toString() + " benvunuto nel **" + member.guild.name + "**\rSei il **" + member.guild.memberCount + "° membro**");
-})
-
-//ADDIO
-client.on("guildMemberRemove", (member) => {
-    client.channels.cache.get("982622669415546920").send("Ciao ciao" + member.toString() + ", torna presto!");
-})
-
-
 //PAROLE PROIBITE
 client.on("messageCreate", message => {
     if (message.channel.type == "DM") return
